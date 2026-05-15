@@ -1,5 +1,4 @@
 # PART A
-
 def add_item(item, cart=[]):
     cart.append(item)
     return cart
@@ -35,7 +34,6 @@ print(add_item("eggs"))
 # This happens because lists are mutable.
 
 # PART B
-
 def add_item_fixed(item, cart=None):
     if cart is None:
         cart = []
@@ -49,7 +47,6 @@ print(add_item_fixed("eggs"))
 
 
 # PART C
-
 def create_cart(owner, discount=0):
     return {
         "owner": owner,
@@ -95,7 +92,6 @@ price_tuple = (500, 600)
 update_price(price_tuple, 700)
 
 # Discussion Points
-
 # 1. discount=0 is safe because int is immutable.
 #    cart=[] is dangerous because list is mutable.
 
